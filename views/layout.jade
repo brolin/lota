@@ -1,0 +1,70 @@
+!!!
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div#top
+      div.wrap
+        div.logo
+          img(src="/images/logo.png")
+          p Lineamientos de Ordenación Territorial para Antioquia
+        div#menu
+          ul#nav
+            li.current 
+              a(href="/proyecto") El Proyecto
+              ul
+                li
+                  a(href="/proyecto/antecedentes") Antecedentes (Lota fase I)
+                li
+                  a(href="/proyecto/lota2") Presentación Lota fase II
+                li
+                  a(href="/proyecto/quienes") Quienes somos
+                li
+                  a(href="/proyecto/cronograma") Cronograma
+            li 
+              a(href="/prensa") Prensa
+              ul
+                li
+                  a(href="/prensa/boletines_prensa") Boletines de prensa
+                li
+                  a(href="/prensa/boletines_externos") Boletines externos
+            li 
+              a(href="/participacion") Estrategia de participación
+              ul
+                li
+                  a(href="/participacion/componente") Concertación y comunicación
+                li
+                  a(href="/participacion/talleres") Talleres Lota
+                li
+                  a(href="/participacion/comentarios") Comentarios o sugerencias
+            li 
+              a(href="/galeria") Galería
+              ul
+                li
+                  a(href="/galeria/fotos") Fotos Lota II
+                li
+                  a(href="/galeria/mapas") Mapas
+            li 
+              a(href="/contacto") Contacto
+
+  div#home-header
+    div.wrap
+        img(src="/images/header-home.png")
+
+  div#content
+      div.wrap!= body
+      
+  div#bottom
+    div.wrap
+      div.footer  
+        img(src="/images/comision3tita.png")
+        img(src="/images/gobernacion.png")
+        img(src="/images/alcaldia.png")
+        img(src="/images/area.png")
+      div.footer
+        img(src="/images/eia.png")
+        img(src="/images/upb.png")
+        img(src="/images/udem.png")
+        img(src="/images/unal.png")
+        img(src="/images/udea.png", id="separador")
