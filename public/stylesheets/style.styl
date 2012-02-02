@@ -73,17 +73,6 @@ body
     li
       float: left
       margin: 3px
-      a
-        corner(6px)
-        background: verde-obscuro
-        display: inline-block
-        padding: 10px
-        float: left
-        color: white
-        text-decoration: none
-        &:hover
-          background-color: white
-          color: verde-obscuro
 
 p
   text-align justify
@@ -109,12 +98,25 @@ p
     h1
       color: verde-obscuro
       font-size: 24px
+    #left-content
+      width: 75%
+      display: inline-block
+    #right-content
+      width: 20%
+      top: 0
+      float: right
+      display: inline-block
+
 #bottom
   border-top-width: 2px
   border-top-style: solid
   border-top-color: verde-obscuro
+  background-color: verde-claro
   .wrap
     .footer
+      padding-top: 15px
+      padding-bottom: 15px
+      display: inline-block
       img
         vertical-align: middle
         padding-right: 6px
@@ -128,15 +130,9 @@ p
   width: 974px
   margin: 0 auto
 
-.footer
-  padding-top: 15px
-  padding-bottom: 15px
-  display: block
-  float: right
-
 #separador
   border-right-style: solid
-  border-right-color: verde-claro
+  border-right-color: verde-obscuro
   border-right-width: 2px
 
 #nav
@@ -150,23 +146,29 @@ p
 #nav a
   corner(6px)
   background: verde-obscuro
+  display: inline-block
   padding: 10px
+  float: left
   color: white
   text-decoration: none
-  
+  &:hover
+    background-color: white
+    color: verde-obscuro
+
 /* main level link hover */
 #nav .current a, #nav li:hover > a
   corner(6px)
   background: verde-obscuro
-  padding: 10px
   color: white
   text-decoration: none
+  &:hover
+    background-color: white
+    color: verde-obscuro
 
 /* sub levels link hover */
 #nav ul li:hover a, #nav li:hover li a
   corner(6px)
   background: verde-obscuro
-  padding: 10px
   color: white
   text-decoration: none
 
@@ -174,7 +176,6 @@ p
   corner(6px)
   background: verde-obscuro
   display: inline-block
-  padding: 10px
   color: white
   text-decoration: none
 
@@ -188,7 +189,6 @@ p
   corner(6px)
   background: verde-obscuro
   display: inline-block
-  padding: 10px
   color: white
   text-decoration: none
 
@@ -196,7 +196,6 @@ p
   corner(6px)
   background: verde-obscuro
   display: inline-block
-  padding: 10px
   color: white
   text-decoration: none
 
@@ -204,7 +203,6 @@ p
   corner(6px)
   background: verde-obscuro
   display: inline-block
-  padding: 10px
   float: left
   color: white
   text-decoration: none
