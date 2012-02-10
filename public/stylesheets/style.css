@@ -106,6 +106,7 @@ p {
 }
 .logo p {
   color: #fff;
+  text-shadow: 1px 1px 1px #046729;
 }
 #home-header {
   background: #046729;
@@ -120,6 +121,13 @@ p {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+#content .wrap h3 {
+  color: #046729;
+}
+#content .wrap h2 {
+  color: #046729;
+  font-size: 18px;
+}
 #content .wrap h1 {
   color: #046729;
   font-size: 24px;
@@ -128,17 +136,46 @@ p {
   width: 75%;
   display: inline-block;
 }
+#content .wrap #left-content .quienes {
+  margin: 15px;
+  display: inline-table;
+}
+#content .wrap #left-content .quienes .imagen {
+  width: 125px;
+  height: 70px;
+  float: left;
+}
 #content .wrap #right-content {
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  padding-top: 11px;
+  box-shadow: 3px 3px 3px #046729;
+  background-color: #b1c903;
+  color: #fff;
   width: 20%;
   top: 0;
   float: right;
   display: inline-block;
 }
+#content .wrap #right-content h1 {
+  text-align: center;
+  font-size: 16px;
+}
+#content .wrap #right-content p {
+  text-shadow: 1px 1px 1px #046729;
+  padding: 11px;
+}
 #bottom {
   border-top-width: 2px;
   border-top-style: solid;
   border-top-color: #046729;
-  background-color: #b1c903;
+  background-color: #fff;
 }
 #bottom .wrap .footer {
   padding-top: 15px;
