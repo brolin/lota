@@ -64,7 +64,7 @@ exports.talleres = function(req, res){
  */
 
 exports.lineamientos = function(req, res){
-  res.render('lineamientos', { title: 'Express' })
+  res.render('lineamientos', { title: 'Lineamientos' })
 };
 
 /*
@@ -72,15 +72,15 @@ exports.lineamientos = function(req, res){
  */
 
 exports.galeria = function(req, res){
-  res.render('galeria', { title: 'Express' })
+  res.render('galeria', { title: 'Galería' })
 };
 
 exports.fotos = function(req, res){
-  res.render('fotos', { title: 'Express' })
+  res.render('fotos', { title: 'Fotografías' })
 };
 
 exports.mapas = function(req, res){
-  res.render('mapas', { title: 'Express' })
+  res.render('mapas', { title: 'Cartografía y análisis' })
 };
 
 /*
@@ -89,5 +89,5 @@ exports.mapas = function(req, res){
 
 exports.contacto = function(req, res){
     console.log("contacto");
-    res.render('contacto', { title: 'Express' })
+    res.render('contacto', { title: 'Información de contacto' })
 };

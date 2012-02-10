@@ -350,3 +350,7 @@ table {
   line-height: 0;
   height: 0;
 }
+#pdf {
+  list-style: url("/images/icono-pdf.png") inside;
+  display: list-item;
+}
