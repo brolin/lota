@@ -60,6 +60,7 @@ nav, section, li
 -----------------------------------------------------------------------------*/
 verde-claro= #b1c903
 verde-obscuro= #046729
+verde-medio= #91bb16
 
 body
   background: white
@@ -104,7 +105,10 @@ p
     h1
       color: verde-obscuro
       font-size: 24px
-    #left-content
+    #centered-content
+      margin: 0 auto
+      width: 960px
+    #centered-content
       .quienes
         .imagen
           width:125px
@@ -112,6 +116,7 @@ p
           float:left
         margin: 15px
         display: inline-table
+    #left-content
       width: 75%
       display: inline-block
     #right-content
@@ -151,8 +156,16 @@ p
   float: right
 
 .wrap
-  width: 974px
+  width: 960px
   margin: 0 auto
+
+th,tr,td,table
+  border-width: 2px
+  border-style: solid
+  border-color: verde-obscuro
+  border-collapse: collapse
+  padding: 2px
+  margin: 2px auto
 
 #separador
   border-right-style: solid

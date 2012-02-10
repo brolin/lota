@@ -132,18 +132,22 @@ p {
   color: #046729;
   font-size: 24px;
 }
-#content .wrap #left-content {
-  width: 75%;
-  display: inline-block;
+#content .wrap #centered-content {
+  margin: 0 auto;
+  width: 960px;
 }
-#content .wrap #left-content .quienes {
+#content .wrap #centered-content .quienes {
   margin: 15px;
   display: inline-table;
 }
-#content .wrap #left-content .quienes .imagen {
+#content .wrap #centered-content .quienes .imagen {
   width: 125px;
   height: 70px;
   float: left;
+}
+#content .wrap #left-content {
+  width: 75%;
+  display: inline-block;
 }
 #content .wrap #right-content {
   -moz-border-radius-topleft: 6px;
@@ -192,8 +196,19 @@ p {
   float: right;
 }
 .wrap {
-  width: 974px;
+  width: 960px;
   margin: 0 auto;
+}
+th,
+tr,
+td,
+table {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #046729;
+  border-collapse: collapse;
+  padding: 2px;
+  margin: 2px auto;
 }
 #separador {
   border-right-style: solid;
