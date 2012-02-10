@@ -7,6 +7,7 @@ var express = require('express')
   , routes = require('./routes')
 
 var app = module.exports = express.createServer();
+var cluster = require('cluster');
 
 // Configuration
 
@@ -55,5 +56,10 @@ app.get('/galeria/mapas', routes.mapas);
 // Contacto
 app.get('/contacto', routes.contacto);
 
-app.listen(3000);
-console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+cluster(app)
+    .use(cluster.logger('logs'))
+    .use(cluster.stats())
+    .use(cluster.pidfiles('pids'))
+    .use(cluster.cli())
+    .use(cluster.repl(8886))
+    .listen(3000);
