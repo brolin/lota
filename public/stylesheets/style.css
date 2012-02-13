@@ -82,12 +82,15 @@ li {
 /*
 -----------------------------------------------------------------------------*/
 body {
-  background: #fff;
+  background: #b1c903;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-#top {
-  background: #b1c903;
-  height: 94px;
+#top .wrap {
+  background-color: #fff;
+}
+#top .wrap #menu {
+  margin-right: 6px;
+  background-color: #fff;
 }
 #top ul {
   float: right;
@@ -114,10 +117,8 @@ p {
 #header {
   background: #b1c903;
 }
-#content {
-  background: #fff;
-}
 #content .wrap {
+  background-color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -129,12 +130,16 @@ p {
   font-size: 18px;
 }
 #content .wrap h1 {
-  color: #046729;
+  color: #fff;
   font-size: 24px;
+  background-color: #046729;
 }
 #content .wrap #centered-content {
   margin: 0 auto;
   width: 960px;
+}
+#content .wrap #centered-content {
+  width: 98%;
 }
 #content .wrap #centered-content .quienes {
   margin: 15px;
@@ -146,10 +151,14 @@ p {
   float: left;
 }
 #content .wrap #left-content {
-  width: 75%;
+  width: 78%;
   display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #content .wrap #right-content {
+  margin-top: 10px;
+  margin-right: 10px;
   -moz-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
   -moz-border-radius-topright: 6px;
@@ -162,7 +171,7 @@ p {
   box-shadow: 3px 3px 3px #046729;
   background-color: #b1c903;
   color: #fff;
-  width: 20%;
+  width: 18%;
   top: 0;
   float: right;
   display: inline-block;
@@ -181,6 +190,9 @@ p {
   border-top-color: #046729;
   background-color: #fff;
 }
+#bottom .wrap {
+  background-color: #fff;
+}
 #bottom .wrap .footer {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -192,7 +204,7 @@ p {
   padding-left: 6px;
 }
 #menu {
-  padding-top: 28px;
+  padding-top: 8px;
   float: right;
 }
 .wrap {
@@ -353,4 +365,10 @@ table {
 #pdf {
   list-style: url("/images/icono-pdf.png") inside;
   display: list-item;
+}
+b {
+  color: #046729;
+}
+#fill {
+  height: 26px;
 }
