@@ -46,7 +46,7 @@ app.get('/prensa/boletines_externos', routes.boletines_externos);
 app.get('/participacion', routes.participacion);
 app.get('/participacion/componente', routes.componente);
 app.get('/participacion/talleres', routes.talleres);
-app.get('/participacion/comentarios', routes.comentarios);
+app.get('/participacion/talleres2012', routes.talleres2012);
 // Lineamientos
 app.get('/lineamientos', routes.lineamientos);
 // Galería

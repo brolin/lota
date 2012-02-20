@@ -59,6 +59,10 @@ exports.talleres = function(req, res){
   res.render('talleres', { title: 'Talleres LOTA II' })
 };
 
+exports.talleres2012 = function(req, res){
+  res.render('talleres2012', { title: 'Talleres LOTA II' })
+};
+
 /*
  * GET Lineamientos subsection.
  */
