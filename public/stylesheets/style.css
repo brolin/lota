@@ -157,7 +157,7 @@ p {
   margin-right: 10px;
 }
 #content .wrap #right-content {
-  background-color: #deeaae;
+  background-color: #fff;
   width: 18%;
   top: 0;
   float: right;
@@ -379,13 +379,13 @@ b {
   text-align: right;
 }
 #recuadro #titulo p b {
-  color: #fff;
+  color: #046729;
 }
 #recuadro #titulo p#subtitulo {
   font-size: 12px;
 }
 #recuadro #contenido {
-  background-color: #fff;
+  background-color: #046729;
   margin: 0px 10px 10px 10px;
   -moz-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -400,7 +400,7 @@ b {
 #recuadro #contenido p {
   font-size: 14px;
   text-align: center;
-  color: #046729;
+  color: #fff;
 }
 #noticias {
   top: 0;
