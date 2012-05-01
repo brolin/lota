@@ -68,7 +68,15 @@ exports.talleres2012 = function(req, res){
  */
 
 exports.lineamientos = function(req, res){
-  res.render('lineamientos', { title: 'Lineamientos' })
+    res.render('lineamientos', { title: 'Lineamientos', lineamiento: '0'});
+};
+
+/*
+ * GET Galeria subsection.
+ */
+
+exports.linea = function(req, res){
+    res.render('lineamientos', { title: 'Lineamientos', lineamiento: req.param('linea')});
 };
 
 /*

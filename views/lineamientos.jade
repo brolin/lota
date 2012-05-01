@@ -1,51 +1,23 @@
 div#centered-content
   h1 Lineamientos
   br
-  h2 Próximamente podrá conocer los LOTA formulados para Antioquia
-  p En la actualidad se está desarrollando la socialización de resultados del Proyecto LOTA Fase II en las nueve subregiones del departamento. El propósito es continuar fomentando la participación de los actores estratégicos para revisar los avances del equipo técnico y lograr que los lineamientos de ordenación territorial para Antioquia que se han formulado sean revisados con los habitantes de las subregiones para que puedan hacer ajustes antes de ser publicados. 
+  h2 LOTA formulados para Antioquia
   br
-  p Esta es la agenda de talleres para la socialización del diagnóstico de potencialidades y tensiones encontradas en el territorio y el debate sobre los lineamientos construidos:
-  br
-  br
-  table
-    tbody
-      tr
-        th Fecha 
-        th Subregión 
-        th Lugar de encuentro
-      tr#yapaso
-        td Febrero 3
-        td Norte
-        td Universidad Católica del Norte- Santa Rosa de Osos
-      tr#yapaso
-        td Febrero 15
-        td Valle de Aburrá
-        td Aula Múltiple- Paraninfo Universidad de Antioquia- Medellín
-      tr#yapaso
-        td Febrero 20
-        td Occidente
-        td Institución Educativa Arturo Velásquez- Santa Fe de Antioquia
-      tr#yapaso
-        td Febrero 20
-        td Magdalena Medio
-        td Auditorio del SENA- Puerto Berrío
-      tr#yapaso
-        td Febrero 23
-        td Suroeste
-        td Sede Club Kiwanis- Andes
-      tr#yapaso
-        td Febrero 23
-        td Nordeste
-        td Aula Múltiple de la Institución Educativa Efe Gómez- Vegachí
-      tr#yapaso
-        td Febrero 28
-        td Bajo Cauca
-        td Universidad de Antioquia- Caucasia
-      tr#yapaso
-        td Febrero 28
-        td Urabá
-        td Ciudadela Educativa y Cultural- Apartadó
-      tr#yapaso
-        td Marzo 7
-        td Oriente
-        td Auditorio de Asocomunal - El Santuario
+
+  h3 Lineamientos
+  div#ContentLineamiento
+    div.MenuLineamiento
+      div#l1
+        a(href="../lineamientos/1")
+          h3 Lineamiento 1 
+      div#l2
+        a(href="../lineamientos/2")
+          h3 Lineamiento 2
+      div#l2
+        a(href="../lineamientos/3")
+          h3 Lineamiento 3
+      div#l2
+        a(href="../lineamientos/4")
+          h3 Lineamiento 4   
+
+    div.TextoLineamiento!= partial('lin'+lineamiento+'.jade');

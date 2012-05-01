@@ -49,6 +49,7 @@ app.get('/participacion/talleres', routes.talleres);
 app.get('/participacion/talleres2012', routes.talleres2012);
 // Lineamientos
 app.get('/lineamientos', routes.lineamientos);
+app.get('/lineamientos/:linea', routes.linea);
 // Galería
 app.get('/galeria', routes.galeria);
 app.get('/galeria/fotos', routes.fotos);
