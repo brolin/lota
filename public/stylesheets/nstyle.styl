@@ -1,0 +1,390 @@
+////////////////////////////////////////////////
+//                   UTILS    
+////////////////////////////////////////////////
+
+corner-each(tl, tr, br, bl)
+  -moz-border-radius-topleft tl
+  -webkit-border-top-left-radius tl
+  -moz-border-radius-topright tr
+  -webkit-border-top-right-radius tr
+  -moz-border-radius-bottomleft bl
+  -webkit-border-bottom-left-radius bl
+  -moz-border-radius-bottomright br
+  -webkit-border-bottom-right-radius br
+
+corner(px)
+  corner-each(px,px,px,px)
+
+corner-top(px)
+  corner-each(px,px,0,0)
+
+corner-bottom(px)
+  corner-each(0,0,px,px)
+
+corner-left(px)
+  corner-each(px,0,0,px)
+
+corner-right(px)
+  corner-each(0,px,px,0)
+
+bx-shadow(shw-size, shw-color)
+  -moz-box-shadow: 0px 0px shw-size shw-color
+  -webkit-box-shadow: 0px 0px shw-size shw-color
+  box-shadow: 0px 0px shw-size shw-color
+
+bg-gradient(color1,color2)
+  background-image: -moz-linear-gradient(top, color1, color2)
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, color1),color-stop(1, color2))
+  background-image: -webkit-linear-gradient(top, color1, color2)
+  background-image: -moz-linear-gradient(top, color1, color2)
+  background-image: -ms-linear-gradient(top, color1, color2)
+  background-image: -o-linear-gradient(top, color1, color2)
+
+////////////////////////////////////////////////
+
+/* Reset
+Based on http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/
+Removed elements not supported in HTML5
+-----------------------------------------------------------------------------*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strike, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td
+  margin 0
+  padding 0
+  border 0
+  outline 0
+  font-size 100%
+  vertical-align baseline
+
+/*
+Trigger the new block level elements in to the correct content flow
+-----------------------------------------------------------------------------*/
+article, aside, dialog, figure,
+footer, header, hgroup, menu,
+nav, section, li
+  display block
+
+/*
+-----------------------------------------------------------------------------*/
+verde-claro= #b1c903
+verde-obscuro= #046729
+verde-medio= #91bb16
+
+verde-claro-alpha= #b1c90370
+verde-obscuro-alpha= #04672970
+verde-medio-alpha= #91bb1670
+
+verde-clarito= #deeaae
+
+body
+  background-image: url("/images/nuevoLook/background.jpg")
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+
+#top
+  display: block
+  .wrap
+    #logo
+      height: 115px
+      background-image: url("/images/nuevoLook/logo.png")
+      background-repeat: no-repeat
+      border: 1px black solid
+    #menu
+      height: 58px
+      border: 1px black solid
+      background-image: url("/images/nuevoLook/barraMenu.png")
+      background-repeat: no-repeat 
+  ul
+    float: right
+    li
+      float: left
+      margin: 3px
+#slide-banner
+  #slides
+    border: 1px black solid
+
+#slogan
+  #texto-slogan
+    border: 1px black solid
+    img
+      margin: 0 auto
+      display: block
+
+p
+  text-align justify
+
+.logo
+  display: block
+  float: left
+  padding-top: 13px
+  p
+    color: white
+    text-shadow: 1px 1px 1px verde-obscuro
+
+#home-header
+//  background: verde-obscuro
+
+#header
+//  background: verde-claro
+
+#content
+  .wrap
+    border: 1px black solid
+    //    background-color: white
+    padding-top: 15px
+    padding-bottom: 15px
+    h3
+      color: verde-obscuro
+    h2
+      color: verde-obscuro
+      font-size: 18px
+    h1
+      color: white
+      font-size: 24px
+      background-color: verde-obscuro
+    #centered-content
+      margin: 0 auto
+      width: 960px
+    #centered-content
+      width: 98%
+      .quienes
+        .imagen
+          width:125px
+          height:70px
+          float:left
+        margin: 15px
+        display: inline-table
+    #left-content
+      width: 78%
+      display: inline-block
+      margin-left: 10px
+      margin-right: 10px
+    #right-content
+      background-color: verde-clarito
+      width: 19%
+      top: 0
+      float: right
+      display: inline-block
+
+#bottom
+  .wrap
+    .footer
+      img
+        border: 1px black solid
+
+.wrap
+  width: 960px
+  margin: 0 auto
+
+th,tr,td,table
+  border-width: 2px
+  border-style: solid
+  border-color: verde-obscuro
+  border-collapse: collapse
+  padding: 2px
+  margin: 2px auto
+
+#separador
+  border-right-style: solid
+  border-right-color: verde-obscuro
+  border-right-width: 2px
+
+#nav
+  display: inline-block
+  li
+    float: left
+    position: relative
+    list-style: none
+
+/* main level link */
+#nav a
+  corner(6px)
+  background: verde-obscuro
+  display: inline-block
+  padding: 10px
+  float: left
+  color: white
+  text-decoration: none
+  &:hover
+    background-color: white
+    color: verde-obscuro
+
+/* main level link hover */
+#nav .current a, #nav li:hover > a
+  corner(6px)
+  background: verde-obscuro
+  color: white
+  text-decoration: none
+  &:hover
+    background-color: white
+    color: verde-obscuro
+
+/* sub levels link hover */
+#nav ul li:hover a, #nav li:hover li a
+  corner(6px)
+  background: verde-obscuro
+  color: white
+  text-decoration: none
+
+#nav ul a:hover
+  corner(6px)
+  background: verde-obscuro
+  display: inline-block
+  color: white
+  text-decoration: none
+
+#nav ul
+  display: none
+  position: absolute
+  top: 35px
+  left: 0
+
+#nav li:hover > ul
+  corner(6px)
+  background: verde-obscuro
+  display: inline-block
+  color: white
+  text-decoration: none
+
+#nav ul li
+  corner(6px)
+  background: verde-obscuro
+  display: inline-block
+  color: white
+  text-decoration: none
+
+#nav ul a
+  corner(6px)
+  background: verde-obscuro
+  display: inline-block
+  float: left
+  color: white
+  text-decoration: none
+
+#nav:after
+  content: "."
+  display: block
+  clear: both
+  visibility: hidden
+  line-height: 0
+  height: 0
+
+#pdf
+  list-style: url("/images/icono-pdf.png") inside;
+  display: list-item;
+
+b
+  color: verde-obscuro
+
+#fill
+  height: 26px
+
+#yapaso
+  color: grey
+
+#centrado
+  p
+    text-align: center
+
+#flotaderecha
+  float: right
+  padding: 5px
+  margin-left: 5px
+
+#recuadro
+  margin-right: 5px
+  #titulo
+    p
+      b
+        color: white
+      font-size: 12px
+      text-align: right
+    p#subtitulo
+      font-size: 12px
+      color: white
+    background-color: verde-obscuro
+    margin: 10px 15px 0px 30px 
+    corner-top(6px)
+    padding: 11px
+  #contenido
+    background-color: white
+    margin: 0px 10px 10px 10px
+    corner(6px)
+    padding: 11px
+    p 
+      font-size: 14px
+      text-align: center
+      color: verde-obscuro
+    ul 
+      padding-left: 10px
+      li
+        list-style: disc 
+        display: list-item
+        color: verde-obscuro  
+        font-size: 14px
+
+#noticias
+  top: 0
+  left: 800px
+  position: absolute
+  #titulo
+    p
+      font-size: 14px
+      text-align: right
+    p#subtitulo
+      font-size: 12px
+    background-color: verde-claro-alpha
+    margin: 10px 15px 0px 30px 
+    corner-top(6px)
+    padding: 11px
+  #contenido
+    background-color: verde-obscuro-alpha
+    margin: 0px 10px 10px 10px
+    corner(6px)
+    padding: 11px
+    p
+      font-size: 14px
+      text-align: center    
+
+.contacto
+  font-size: 16px
+
+#ContentLineamiento
+  border: 1px solid
+  display: table
+  width: 100%
+  height: 800px
+  
+.MenuLineamiento
+  display: table-cell
+  margin: 10px
+  div
+    corner(6px)
+    border: 1px solid black
+    padding: 10px
+    margin: 5px
+    word-break: break-all
+
+.TextoLineamiento
+  width: 80%
+  display: table-cell
+  margin: 10px
+  padding: 10px
+  border: 1px solid black
+  h1
+    display: block
+  .mapa
+    float: right
+    border: 1px solid black
+    width: 352px
+    height: 490px
+    margin-top: 30px
+    margin-left: 10px
+    margin-right: 10px
+    p
+      text-align: center

@@ -3,62 +3,27 @@ html
   head
   meta(name="google-site-verification",content="UKtHkz9bvx5aOBbwkB9pvil6p-t9NoVM2u_VH2QIg_0")
   title= title
-  link(rel='stylesheet', href='/stylesheets/style.css')
+  link(rel='stylesheet', href='/stylesheets/nstyle.css')
   body
-    div#home-header
-      div.wrap
-        img(src="/images/header.png")
-        // div#noticias
-        //   div#titulo
-        //   div#contenido
-        //     p hola dfhakdfa kafhkdf akjdfhakdf adkajdhf
-        //     p alkdjafl akjdflkajdf ajfda lfjalkdfjaldfl
     div#top
       div.wrap
+        div#logo
         div#menu
-          ul#nav
-            li.current 
-              a(href="/") LOTA II
-              ul
-                li
-                  a(href="/proyecto/antecedentes") Antecedentes (LOTA fase I)
-                li
-                  a(href="/proyecto/lota2") Presentación LOTA fase II
-                li
-                  a(href="/proyecto/quienes") Quiénes somos
-            li 
-              a(href="/prensa") Noticias
-            li 
-              a Participación
-              ul
-                li
-                  a(href="/participacion") -Estrategia-
-                li
-                  a(href="/participacion/talleres") Talleres LOTA 2011
-                li
-                  a(href="/participacion/talleres2012") Talleres LOTA 2012
-
-            li
-              a(href="/lineamientos") Lineamientos
-            li 
-              a(href="/contacto") Contacto
-
-div#content
-    div.wrap!= body
+    div#slide-banner
+      div.wrap
+        div#slides
+          img(src="/images/nuevoLook/slideBanner.png")  
+    div#slogan
+      div.wrap
+        div#texto-slogan
+          img(src="/images/nuevoLook/slogan.png")
+    div#content
+      div.wrap!= body
     
-div#bottom
-  div.wrap
-    div.footer
-      img(src="/images/eia.png")
-      img(src="/images/upb.png")
-      img(src="/images/udem.png")
-      img(src="/images/unal.png")
-      img(src="/images/udea.png", id="separador")
-    div.footer  
-      img(src="/images/comision3tita.png")
-      img(src="/images/gobernacion.png")
-      img(src="/images/alcaldia.png")
-      img(src="/images/area.png")
+    div#bottom
+      div.wrap
+        div.footer
+          img(src="/images/nuevoLook/footer.png")
 
 // Fancybox
 link(rel='stylesheet', href='/javascripts/thirdparty/fancybox/fancybox/jquery.fancybox-1.3.4.css', type='text/css', media='screen')
