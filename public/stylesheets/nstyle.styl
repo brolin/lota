@@ -83,20 +83,23 @@ verde-medio-alpha= #91bb1670
 verde-clarito= #deeaae
 
 body
-  background-image: url("/images/nuevoLook/background.jpg")
+  background-image: url("/images/nuevoLook/bgpattern.png")
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
 
 #top
+  background-image: url("/images/nuevoLook/slices_fondo/slice_0_0.png")
+  background-repeat: no-repeat
+  background-position: top
   display: block
   .wrap
     #logo
       height: 115px
       background-image: url("/images/nuevoLook/logo.png")
       background-repeat: no-repeat
-      border: 1px black solid
+      //border: 1px black solid
     #menu
       height: 58px
-      border: 1px black solid
+      //border: 1px black solid
       background-image: url("/images/nuevoLook/barraMenu.png")
       background-repeat: no-repeat 
   ul
@@ -105,12 +108,15 @@ body
       float: left
       margin: 3px
 #slide-banner
+  background-image: url("/images/nuevoLook/slices_fondo/slice_1_0.png")
+  background-repeat: no-repeat
+  background-position: top
   #slides
-    border: 1px black solid
+    //border: 1px black solid
 
 #slogan
   #texto-slogan
-    border: 1px black solid
+    //border: 1px black solid
     img
       margin: 0 auto
       display: block
@@ -133,11 +139,14 @@ p
 //  background: verde-claro
 
 #content
+  background-image: url("/images/nuevoLook/slices_fondo/slice_3_0.png")
+  background-repeat: no-repeat
+  background-position: bottom
   .wrap
-    border: 1px black solid
+    //border: 1px black solid
     //    background-color: white
-    padding-top: 15px
-    padding-bottom: 15px
+    //padding-top: 15px
+    padding-bottom: 35px
     h3
       color: verde-obscuro
     h2
@@ -148,9 +157,33 @@ p
       font-size: 24px
       background-color: verde-obscuro
     #centered-content
-      margin: 0 auto
-      width: 960px
-    #centered-content
+      #contIndex
+        corner(6px)
+        background-color: white
+        display: block
+        width: 100%
+        border: 1px black solid
+        #video
+          display: table
+          margin: 0 auto
+          .video_lota
+            display: table-cell
+            border: 1px black solid
+            corner(6px)
+            height: 345px
+            width: 600px
+        #tres_cuadros
+          //border: 1px black solid
+          display: table
+          margin: 0 auto
+          .cuadro
+            background-color: white
+            corner(6px)
+            height: 345px
+            width: 295px
+            border: 1px black solid
+            display: table-cell
+
       width: 98%
       .quienes
         .imagen
@@ -172,10 +205,19 @@ p
       display: inline-block
 
 #bottom
+  background-image: url("/images/nuevoLook/slices_fondo/slice_4_0.png")
+  background-repeat: no-repeat
+  background-position: bottom
   .wrap
     .footer
       img
-        border: 1px black solid
+        //border: 1px black solid
+
+
+#superwrap
+  width: 1217px
+  margin: 0 auto
+  background-color: white
 
 .wrap
   width: 960px
@@ -388,3 +430,5 @@ b
     margin-right: 10px
     p
       text-align: center
+
+

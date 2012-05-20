@@ -82,21 +82,22 @@ li {
 /*
 -----------------------------------------------------------------------------*/
 body {
-  background-image: url("/images/nuevoLook/background.jpg");
+  background-image: url("/images/nuevoLook/bgpattern.png");
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 #top {
+  background-image: url("/images/nuevoLook/slices_fondo/slice_0_0.png");
+  background-repeat: no-repeat;
+  background-position: top;
   display: block;
 }
 #top .wrap #logo {
   height: 115px;
   background-image: url("/images/nuevoLook/logo.png");
   background-repeat: no-repeat;
-  border: 1px #000 solid;
 }
 #top .wrap #menu {
   height: 58px;
-  border: 1px #000 solid;
   background-image: url("/images/nuevoLook/barraMenu.png");
   background-repeat: no-repeat;
 }
@@ -107,11 +108,10 @@ body {
   float: left;
   margin: 3px;
 }
-#slide-banner #slides {
-  border: 1px #000 solid;
-}
-#slogan #texto-slogan {
-  border: 1px #000 solid;
+#slide-banner {
+  background-image: url("/images/nuevoLook/slices_fondo/slice_1_0.png");
+  background-repeat: no-repeat;
+  background-position: top;
 }
 #slogan #texto-slogan img {
   margin: 0 auto;
@@ -129,12 +129,17 @@ p {
   color: #fff;
   text-shadow: 1px 1px 1px #046729;
 }
+#home-header,
+#header,
+#content {
+  background-image: url("/images/nuevoLook/slices_fondo/slice_3_0.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 #home-header .wrap,
 #header .wrap,
 #content .wrap {
-  border: 1px #000 solid;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 35px;
 }
 #home-header .wrap h3,
 #header .wrap h3,
@@ -157,13 +162,68 @@ p {
 #home-header .wrap #centered-content,
 #header .wrap #centered-content,
 #content .wrap #centered-content {
-  margin: 0 auto;
-  width: 960px;
-}
-#home-header .wrap #centered-content,
-#header .wrap #centered-content,
-#content .wrap #centered-content {
   width: 98%;
+}
+#home-header .wrap #centered-content #contIndex,
+#header .wrap #centered-content #contIndex,
+#content .wrap #centered-content #contIndex {
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  border: 1px #000 solid;
+}
+#home-header .wrap #centered-content #contIndex #video,
+#header .wrap #centered-content #contIndex #video,
+#content .wrap #centered-content #contIndex #video {
+  display: table;
+  margin: 0 auto;
+}
+#home-header .wrap #centered-content #contIndex #video .video_lota,
+#header .wrap #centered-content #contIndex #video .video_lota,
+#content .wrap #centered-content #contIndex #video .video_lota {
+  display: table-cell;
+  border: 1px #000 solid;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  height: 345px;
+  width: 600px;
+}
+#home-header .wrap #centered-content #contIndex #tres_cuadros,
+#header .wrap #centered-content #contIndex #tres_cuadros,
+#content .wrap #centered-content #contIndex #tres_cuadros {
+  display: table;
+  margin: 0 auto;
+}
+#home-header .wrap #centered-content #contIndex #tres_cuadros .cuadro,
+#header .wrap #centered-content #contIndex #tres_cuadros .cuadro,
+#content .wrap #centered-content #contIndex #tres_cuadros .cuadro {
+  background-color: #fff;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  height: 345px;
+  width: 295px;
+  border: 1px #000 solid;
+  display: table-cell;
 }
 #home-header .wrap #centered-content .quienes,
 #header .wrap #centered-content .quienes,
@@ -195,8 +255,15 @@ p {
   float: right;
   display: inline-block;
 }
-#bottom .wrap .footer img {
-  border: 1px #000 solid;
+#bottom {
+  background-image: url("/images/nuevoLook/slices_fondo/slice_4_0.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#superwrap {
+  width: 1217px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 .wrap {
   width: 960px;
