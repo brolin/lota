@@ -1,23 +1,22 @@
-div#centered-content
-  h1 Lineamientos
-  br
-  h2 LOTA formulados para Antioquia
-  br
+div#inner-wrap
+  div#centered-content
+    h2 LOTA formulados para Antioquia
+    br
 
-  h3 Lineamientos
-  div#ContentLineamiento
-    div.MenuLineamiento
-      div#l1
-        a(href="../lineamientos/1")
-          h3 Lineamiento 1 
-      div#l2
-        a(href="../lineamientos/2")
-          h3 Lineamiento 2
-      div#l2
-        a(href="../lineamientos/3")
-          h3 Lineamiento 3
-      div#l2
-        a(href="../lineamientos/4")
-          h3 Lineamiento 4   
+    h3 Lineamientos
+    div#ContentLineamiento
+      div.MenuLineamiento
+        div#l1
+          a(href="../lineamientos/1")
+            h3 Lineamiento 1 
+        div#l2
+          a(href="../lineamientos/2")
+            h3 Lineamiento 2
+        div#l2
+          a(href="../lineamientos/3")
+            h3 Lineamiento 3
+        div#l2
+          a(href="../lineamientos/4")
+            h3 Lineamiento 4   
 
-    div.TextoLineamiento!= partial('lin'+lineamiento+'.jade');
+      div.TextoLineamiento!= partial('lin'+lineamiento+'.jade');

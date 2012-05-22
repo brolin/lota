@@ -32,6 +32,12 @@ bx-shadow(shw-size, shw-color)
   -webkit-box-shadow: 0px 0px shw-size shw-color
   box-shadow: 0px 0px shw-size shw-color
 
+txt-shadow(shw-size, shw-color)
+  -moz-text-shadow: 0px 0px shw-size shw-color
+  -webkit-tex-shadow: 0px 0px shw-size shw-color
+  text-shadow: 0px 0px shw-size shw-color
+
+
 bg-gradient(color1,color2)
   background-image: -moz-linear-gradient(top, color1, color2)
   background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, color1),color-stop(1, color2))
@@ -84,6 +90,9 @@ verde-clarito= #deeaae
 
 body
   background-image: url("/images/nuevoLook/bgpattern.png")
+  //background-image: url("/images/nuevoLook/fondo_completo.png")
+  //background-repeat: no-repeat
+  //background-position: bottom
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
 
 #top
@@ -94,8 +103,8 @@ body
   .wrap
     #logo
       height: 115px
-      background-image: url("/images/nuevoLook/logo.png")
-      background-repeat: no-repeat
+      //background-image: url("/images/nuevoLook/logo.png")
+      //background-repeat: no-repeat
       //border: 1px black solid
     #menu
       height: 58px
@@ -112,7 +121,9 @@ body
   background-repeat: no-repeat
   background-position: top
   #slides
-    //border: 1px black solid
+    //border: 1px grey solid
+    corner(6px)
+    bx-shadow(10px, black)
 
 #slogan
   #texto-slogan
@@ -123,6 +134,7 @@ body
 
 p
   text-align justify
+  color: black
 
 .logo
   display: block
@@ -138,6 +150,18 @@ p
 #header
 //  background: verde-claro
 
+#inner-wrap
+  top: -250px
+  position: relative
+
+#titulo-p
+  background-image: url("/images/nuevoLook/slices_fondo/sliceint_1_0.png")
+  background-repeat: no-repeat
+  background-position: top
+  height: 354px
+  h1
+    padding: 10px
+
 #content
   background-image: url("/images/nuevoLook/slices_fondo/slice_3_0.png")
   background-repeat: no-repeat
@@ -146,7 +170,7 @@ p
     //border: 1px black solid
     //    background-color: white
     //padding-top: 15px
-    padding-bottom: 35px
+    padding-bottom: 45px
     h3
       color: verde-obscuro
     h2
@@ -154,36 +178,46 @@ p
       font-size: 18px
     h1
       color: white
-      font-size: 24px
-      background-color: verde-obscuro
+      font-size: 30px
+      txt-shadow(10px, grey)
+      //background-color: verde-obscuro
     #centered-content
       #contIndex
         corner(6px)
         background-color: white
         display: block
         width: 100%
-        border: 1px black solid
+        //border: 1px black solid
+        margin: 0 auto;
         #video
           display: table
-          margin: 0 auto
+          margin: 10px auto
           .video_lota
             display: table-cell
-            border: 1px black solid
+            padding: 10px
+            border: 1px grey solid
             corner(6px)
             height: 345px
             width: 600px
+            bx-shadow(10px,black)
         #tres_cuadros
-          //border: 1px black solid
-          display: table
-          margin: 0 auto
+          //border: 1px grey solid
+          display: block
+          margin: 10px auto
+          vertical-align: baseline
           .cuadro
+            padding: 10px
+            margin: 10px
             background-color: white
             corner(6px)
-            height: 345px
-            width: 295px
-            border: 1px black solid
-            display: table-cell
-
+            height: 304px
+            width: 260px
+            border: 1px grey solid
+            display: inline-block
+            bx-shadow(10px, black)
+            img
+              margin-top: 10px
+              corner-bottom(10px)
       width: 98%
       .quienes
         .imagen
@@ -212,7 +246,6 @@ p
     .footer
       img
         //border: 1px black solid
-
 
 #superwrap
   width: 1217px

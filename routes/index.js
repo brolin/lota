@@ -4,7 +4,9 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'LOTA II' })
+    res.render('index', { title: 'LOTA II',
+			  layout: false
+			})
 };
 
 /*

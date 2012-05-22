@@ -9,11 +9,13 @@ html
       div#top
         div.wrap
           div#logo
+            a(href='/')
+              img(src="/images/nuevoLook/logo.png")
           div#menu
-            a(href='#')
+            a(href='/proyecto/antecedentes')
               img(src="/images/nuevoLook/btnLota.png")
             img(src="/images/nuevoLook/separador.png")
-            a(href='#')
+            a(href='/lineamientos')
               img(src="/images/nuevoLook/btnLineamientos.png")
             img(src="/images/nuevoLook/separador.png")
             a(href='#')
@@ -22,17 +24,12 @@ html
             a(href='#')
               img(src="/images/nuevoLook/btnABC.png")
             img(src="/images/nuevoLook/separador.png")
-            a(href='#')
+            a(href='/contacto')
               img(src="/images/nuevoLook/btnContacto.png")
-      div#slide-banner
-        div.wrap
-          div#slides
-            img(src="/images/nuevoLook/slideBanner.png")  
-      div#slogan
-        div.wrap
-          div#texto-slogan
-            img(src="/images/nuevoLook/slogan.png")
       div#content
+        div#titulo-p
+          div.wrap
+            h1.titulo= title
         div.wrap!= body
     
       div#bottom
