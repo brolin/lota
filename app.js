@@ -50,6 +50,10 @@ app.get('/participacion/talleres2012', routes.talleres2012);
 // Lineamientos
 app.get('/lineamientos', routes.lineamientos);
 app.get('/lineamientos/:linea', routes.linea);
+// 
+app.get('/publicacion', routes.publicacion);
+app.get('/instrumentos', routes.instrumentos);
+app.get('/cartilla', routes.cartilla);
 // Galería
 app.get('/galeria', routes.galeria);
 app.get('/galeria/fotos', routes.fotos);

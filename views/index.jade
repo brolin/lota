@@ -15,28 +15,32 @@ html
             a(href='/proyecto/antecedentes')
               img(src="/images/nuevoLook/btnLota.png")
             img(src="/images/nuevoLook/separador.png")
-            a(href='/lineamientos')
+            a(href="/lineamientos")
               img(src="/images/nuevoLook/btnLineamientos.png")
             img(src="/images/nuevoLook/separador.png")
-            a(href='#')
+            a(href="/instrumentos")
               img(src="/images/nuevoLook/btnInstGestion.png")
             img(src="/images/nuevoLook/separador.png")
-            a(href='#')
+            a(href="/cartilla")
               img(src="/images/nuevoLook/btnABC.png")
             img(src="/images/nuevoLook/separador.png")
             a(href='/contacto')
               img(src="/images/nuevoLook/btnContacto.png")
-      div#slide-banner
-        div.wrap
-          div#slides
-            img(src="/images/nuevoLook/slideBanner.png")  
-      div#slogan
-        div.wrap
-          div#texto-slogan
-            img(src="/images/nuevoLook/slogan.png")
-      div#content
-        div.wrap!= partial('inicio.jade')
-    
+
+      div#floating-banner
+        div#slide-banner
+          div.wrap
+            div#slides
+              img(src="/images/nuevoLook/slideBanner.png")  
+
+      div#wrap-recuadro
+        div#slogan
+          div.wrap
+            div#texto-slogan
+              img(src="/images/nuevoLook/slogan.png")
+        div#content
+          div.wrap!= partial('inicio.jade')
+      
       div#bottom
         div.wrap
           div.footer

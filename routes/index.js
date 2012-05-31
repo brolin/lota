@@ -18,7 +18,7 @@ exports.proyecto = function(req, res){
 };
 
 exports.antecedentes = function(req, res){
-  res.render('antecedentes', { title: 'Antecedentes' })
+  res.render('antecedentes', { title: 'Antecedentes LOTA fase I' })
 };
 
 exports.lota2 = function(req, res){
@@ -70,7 +70,7 @@ exports.talleres2012 = function(req, res){
  */
 
 exports.lineamientos = function(req, res){
-    res.render('lineamientos', { title: 'Lineamientos', lineamiento: '0'});
+    res.render('lineamientos', { title: 'LOTA formulados para Antioquia', lineamiento: '0'});
 };
 
 /*
@@ -78,7 +78,7 @@ exports.lineamientos = function(req, res){
  */
 
 exports.linea = function(req, res){
-    res.render('lineamientos', { title: 'Lineamientos', lineamiento: req.param('linea')});
+    res.render('lineamientos', { title: 'LOTA formulados para Antioquia', lineamiento: req.param('linea')});
 };
 
 /*
@@ -95,6 +95,19 @@ exports.fotos = function(req, res){
 
 exports.mapas = function(req, res){
   res.render('mapas', { title: 'Cartografía y análisis' })
+};
+
+// PUBLICACIÓN
+exports.publicacion = function(req, res){
+    res.render('publicacion', {title: 'Publicación LOTA fase II'})
+};
+// INSTRUMENTOS DE GESTIÓN
+exports.instrumentos = function(req, res){
+    res.render('instrumentos', {title: 'Instrumentos de Gestión Territorial'})
+};
+// CARTILLA ABC LOTA
+exports.cartilla = function(req, res){
+    res.render('cartilla', {title: 'Cartilla ABC LOTA fase II '})
 };
 
 /*

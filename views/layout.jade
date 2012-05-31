@@ -18,19 +18,23 @@ html
             a(href='/lineamientos')
               img(src="/images/nuevoLook/btnLineamientos.png")
             img(src="/images/nuevoLook/separador.png")
-            a(href='#')
+            a(href='/instrumentos')
               img(src="/images/nuevoLook/btnInstGestion.png")
             img(src="/images/nuevoLook/separador.png")
-            a(href='#')
+            a(href='/cartilla')
               img(src="/images/nuevoLook/btnABC.png")
             img(src="/images/nuevoLook/separador.png")
             a(href='/contacto')
               img(src="/images/nuevoLook/btnContacto.png")
+
       div#content
         div#titulo-p
           div.wrap
             h1.titulo= title
-        div.wrap!= body
+
+      div#wrap-recuadro
+        div#content
+          div.wrap!= body
     
       div#bottom
         div.wrap
