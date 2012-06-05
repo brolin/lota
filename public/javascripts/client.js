@@ -22,3 +22,14 @@ $(document).ready(function() {
     });
     
 });
+
+$(function() {
+    $( "#accordion" ).accordion({
+	collapsible: true,
+	active: false,
+        fillspace: true,
+        autoheight: false,
+        navigation: true,
+        clearStyle: true 
+    });
+});

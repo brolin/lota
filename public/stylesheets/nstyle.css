@@ -186,8 +186,6 @@ p {
 #home-header,
 #header,
 #inner-wrap {
-  padding-right: 25px;
-  padding-left: 25px;
   background-color: #fff;
   border-radius: 6px;
   -moz-border-radius-topleft: 6px;
@@ -304,13 +302,11 @@ p {
 #content .wrap #content-row #left-content {
   width: 80%;
   display: table-cell;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-right: 10px;
 }
 #content .wrap #content-row #right-content {
   background-color: #deeaae;
   width: 20%;
-  top: 0;
   display: table-cell;
 }
 #bottom {
@@ -619,16 +615,26 @@ b {
   font-size: 16px;
 }
 #ContentLineamiento {
-  border: 1px solid;
   display: table;
   width: 100%;
   height: 800px;
 }
 .MenuLineamiento {
-  display: table-cell;
-  margin: 10px;
+  display: block;
+  position: absolute;
 }
-.MenuLineamiento div {
+.MenuLineamiento div a.llinea {
+  border: 1px solid #000;
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+.TextoLineamiento {
+  width: 80%;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #808080;
   border-radius: 6px;
   -moz-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -638,17 +644,6 @@ b {
   -webkit-border-bottom-left-radius: 6px;
   -moz-border-radius-bottomright: 6px;
   -webkit-border-bottom-right-radius: 6px;
-  border: 1px solid #000;
-  padding: 10px;
-  margin: 5px;
-  word-break: break-all;
-}
-.TextoLineamiento {
-  width: 80%;
-  display: table-cell;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #000;
 }
 .TextoLineamiento h1 {
   display: block;

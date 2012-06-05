@@ -4,17 +4,39 @@ div#inner-wrap
     h3 Lineamientos
     div#ContentLineamiento
       div.MenuLineamiento
-        div#l1
-          a(href="../lineamientos/1")
-            h3 Lineamiento 1 
-        div#l2
-          a(href="../lineamientos/2")
-            h3 Lineamiento 2
-        div#l2
-          a(href="../lineamientos/3")
-            h3 Lineamiento 3
-        div#l2
-          a(href="../lineamientos/4")
-            h3 Lineamiento 4   
+        div#accordion
+          h3
+            a(href="#") Lineamientos para desactivar tensiones territoriales
+          div
+            a.llinea(href="1") Áreas protegidas vs. Títulos y actividad minera
+            a.llinea(href="2") Áreas protegidas vs. Uso pecuario, agrario y agropecuario	
+            a.llinea(href="3") Área protegida vs. Centros poblados mayores y procesos de urbanización	
+            a.llinea(href="4") Reservas de la ley 2º de 1959 vs. Títulos y actividad minera	
+            a.llinea(href="5") Iniciativas de conservación vs. Títulos y actividad minera	
+            a.llinea(href="6") Iniciativas de conservación vs. Uso pecuario, agrario y agropecuario	
+            a.llinea(href="7") Iniciativas de conservación vs. Centros poblados mayores y procesos de urbanización	
+            a.llinea(href="8") Centros poblados mayores y procesos de urbanización vs. Títulos y actividad minera	
+            a.llinea(href="9") Centros poblados mayores y procesos de urbanización vs. Actividad petrolera y/o agroindustrial
+            a.llinea(href="10") Distrito agrario vs procesos urbanos	
+
+          h3
+            a(href="#") Lineamientos para desactivar tensiones no cartografiables
+          div
+            a.llinea(href="11") Territorios colectivos vs. Títulos y actividad minera
+            a.llinea(href="12") Tensión sistema urbano regional	
+            a.llinea(href="13") Conflicto por la tenencia de la tierra	
+            a.llinea(href="14") Estudios de amenaza y riesgo	
+            a.llinea(href="15") Megaproyectos	
+
+          h3
+            a(href="#") Lineamientos para potenciar dinámicas territoriales
+          div
+            a.llinea(href="16") Áreas con potencial de conservación	
+            a.llinea(href="17") Áreas con potencial agrícola y agropecuario	
+            a.llinea(href="18") Áreas con potencial pecuario
+            a.llinea(href="19") Áreas con potencial forestal comercial	
+            a.llinea(href="20") Áreas con potencial forestal protector	
+            a.llinea(href="21") Áreas con potencial minero
+            a.llinea(href="22") Áreas con potencial desarrollo de procesos urbanos	
 
       div.TextoLineamiento!= partial('lin'+lineamiento+'.jade');

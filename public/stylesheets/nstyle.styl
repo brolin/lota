@@ -178,8 +178,8 @@ p
 
 #inner-wrap
   //display: table
-  padding-right: 25px
-  padding-left: 25px
+  //padding-right: 25px
+  //padding-left: 25px
   background-color: white
   //border: 1px grey solid
   //bx-shadow(10px, black)
@@ -266,12 +266,10 @@ p
       #left-content
         width: 80%
         display: table-cell
-        margin-left: 10px
-        margin-right: 10px
+        padding-right: 10px
       #right-content
         background-color: verde-clarito
         width: 20%
-        top: 0
         display: table-cell
 
 #bottom
@@ -483,27 +481,34 @@ b
   font-size: 16px
 
 #ContentLineamiento
-  border: 1px solid
+  //border: 1px solid
   display: table
   width: 100%
   height: 800px
   
 .MenuLineamiento
-  display: table-cell
-  margin: 10px
+  display: block
+  //table-cell
+  //margin: 10px
+  position: absolute
   div
-    corner(6px)
-    border: 1px solid black
-    padding: 10px
-    margin: 5px
-    word-break: break-all
+    //padding: 10px
+    //margin: 5px
+    //word-break: break-all
+    a.llinea
+      border: 1px solid black
+      display: block
+      text-decoration: none
+      padding: 5px
 
 .TextoLineamiento
   width: 80%
-  display: table-cell
+  display: block
+  //table-cell
   margin: 10px
   padding: 10px
-  border: 1px solid black
+  border: 1px solid grey
+  corner(6px)
   h1
     display: block
   .mapa
