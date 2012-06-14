@@ -37,17 +37,3 @@ $(function() {
         clearStyle: true,
     });
 });
-
-$(function(){
-     $('.llinea').click(function() {
-	 console.log("click");
-	 $( "#accordion" ).accordion({
-	collapsible: true,
-	active: true,
-        fillspace: true,
-        autoheight: false,
-        navigation: true,
-        clearStyle: true,
-	 });
-     });
- });
