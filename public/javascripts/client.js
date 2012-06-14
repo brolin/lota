@@ -4,8 +4,12 @@ $(document).ready(function() {
 
     /* This is basic - uses default settings */
     
-    $("a#single_image").fancybox();
+    $("a#lineamiento").fancybox({
+	'autoScale' : false
+    });
     
+    $("a#single_image").fancybox();
+
     /* Using custom settings */
     
     $("a#inline").fancybox({
@@ -30,6 +34,20 @@ $(function() {
         fillspace: true,
         autoheight: false,
         navigation: true,
-        clearStyle: true 
+        clearStyle: true,
     });
 });
+
+$(function(){
+     $('.llinea').click(function() {
+	 console.log("click");
+	 $( "#accordion" ).accordion({
+	collapsible: true,
+	active: true,
+        fillspace: true,
+        autoheight: false,
+        navigation: true,
+        clearStyle: true,
+	 });
+     });
+ });

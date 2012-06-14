@@ -621,7 +621,7 @@ b {
 }
 .MenuLineamiento {
   display: block;
-  position: absolute;
+  position: relative;
 }
 .MenuLineamiento div a.llinea {
   border: 1px solid #000;
@@ -630,7 +630,7 @@ b {
   padding: 5px;
 }
 .TextoLineamiento {
-  width: 80%;
+  width: 96%;
   display: block;
   margin: 10px;
   padding: 10px;
@@ -650,13 +650,16 @@ b {
 }
 .TextoLineamiento .mapa {
   float: right;
-  border: 1px solid #000;
-  width: 352px;
-  height: 490px;
   margin-top: 30px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 10px;
+  position: static;
 }
 .TextoLineamiento .mapa p {
   text-align: center;
+}
+#fancybox-content {
+  width: 1000px;
+  height: 1429px;
 }
