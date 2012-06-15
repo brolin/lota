@@ -37,3 +37,8 @@ $(function() {
         clearStyle: true,
     });
 });
+
+$(function() {
+    $( "#tabs" ).tabs();
+});
+
