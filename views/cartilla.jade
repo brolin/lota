@@ -1,13 +1,21 @@
+br
 div#inner-wrap
-  div#fill
-  div#fill
-  div#fill
-  div#fill
-  div#fill
-  div#fill
-  div#fill
-  div#fill
-  div#fill
-  div#fill
-  div#fill
-  div#fill
+  div#tabs
+    ul
+      li
+        a(href="#tabs-1") 
+          h3 Conceptos
+      li
+        a(href="#tabs-2") 
+          h3 	Situación encontrada en Antioquia
+      li
+        a(href="#tabs-3") 
+          h3 ¿Qué hacer frente a esta situación?
+
+    div#tabs-1
+      div!= partial('cartilla_conceptos.jade');
+    div#tabs-2
+      div!= partial('cartilla_situacion.jade');
+    div#tabs-3
+      div!= partial('cartilla_lineamientos.jade');
+

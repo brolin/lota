@@ -86,6 +86,7 @@ verde-medio= #91bb163
 verde-claro-alpha= #b1c90370
 verde-obscuro-alpha= #04672970
 verde-medio-alpha= #91bb1670
+verde-oliva= #c2d69b
 
 verde-clarito= #deeaae
 
@@ -93,7 +94,7 @@ body
   background-image: url("/images/nuevoLook/header-bg.png")
   background-repeat: no-repeat
   background-position: top
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  font: 14px Verdana,Arial,sans-serif
 
 #top
   //background-image: url("/images/nuevoLook/slices_fondo/slice_0_0.png")
@@ -120,10 +121,25 @@ body
   //background-image: url("/images/nuevoLook/slices_fondo/slice_1_0.png")
   //background-repeat: no-repeat
   //background-position: top
+  #slide-img
+    corner(6px)
   #slides
     //border: 1px grey solid
     corner(6px)
+    background-color: white
+    padding: 3px
+    margin: 0 auto
     bx-shadow(10px, black)
+  #dairo
+    a
+      color: white
+      padding-left: 6px
+    position: relative
+    top: -20px
+    left: 780px
+    width: 170px
+    display: block
+    background-color: #0f0f0f70
 
 #slogan
   padding-top: 110px
@@ -300,8 +316,17 @@ p
   width: 960px
   margin: 0 auto
 
-th,tr,td,table
-  border-width: 2px
+th
+  background-color: verde-oliva
+  border-width: 1px
+  border-style: solid
+  border-color: verde-obscuro
+  border-collapse: collapse
+  padding: 2px
+  margin: 2px auto
+
+tr,td,table
+  border-width: 1px
   border-style: solid
   border-color: verde-obscuro
   border-collapse: collapse
@@ -400,6 +425,9 @@ th,tr,td,table
 b
   color: verde-obscuro
 
+a
+ text-decoration: none
+
 #fill
   height: 50px
 
@@ -479,6 +507,7 @@ b
 
 .contacto
   font-size: 16px
+  text-align: center
 
 #ContentLineamiento
   //border: 1px solid
