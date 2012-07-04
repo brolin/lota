@@ -145,6 +145,18 @@ body {
   color: #fff;
   padding-left: 6px;
 }
+#construccion {
+  position: relative;
+  top: -65px;
+  left: 780px;
+  width: 200px;
+  display: block;
+  background-color: rgba(15,15,15,0.44);
+}
+#construccion p {
+  color: #fff;
+  padding: 3px;
+}
 #slogan {
   padding-top: 110px;
 }
