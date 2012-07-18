@@ -22,7 +22,7 @@ exports.antecedentes = function(req, res){
 };
 
 exports.lota2 = function(req, res){
-  res.render('lota2', { title: 'Presentación de LOTA II' })
+  res.render('lota2', { title: 'Presentación de LOTA fase II' })
 };
 
 exports.quienes = function(req, res){

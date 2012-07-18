@@ -135,11 +135,11 @@ body {
 }
 #slide-banner #dairo {
   position: relative;
-  top: -20px;
+  top: -25px;
   left: 780px;
   width: 170px;
   display: block;
-  background-color: rgba(15,15,15,0.44);
+  background-color: rgba(15,15,15,0.439);
 }
 #slide-banner #dairo a {
   color: #fff;
@@ -151,7 +151,7 @@ body {
   left: 780px;
   width: 200px;
   display: block;
-  background-color: rgba(15,15,15,0.44);
+  background-color: rgba(15,15,15,0.439);
 }
 #construccion p {
   color: #fff;
@@ -260,7 +260,8 @@ p {
   width: 98%;
 }
 #content .wrap #centered-content #contIndex {
-  display: block;
+  display: inline;
+  text: center;
   width: 100%;
   margin: 0 auto;
 }
@@ -288,12 +289,12 @@ p {
   box-shadow: 0px 0px 10px #000;
 }
 #content .wrap #centered-content #contIndex #tres_cuadros {
-  display: block;
+  display: inline-block;
   margin: 10px auto;
   padding-top: 40px;
-  vertical-align: baseline;
 }
 #content .wrap #centered-content #contIndex #tres_cuadros .cuadro {
+  float: left;
   padding: 10px;
   margin-left: 23px;
   border-radius: 6px;
@@ -308,7 +309,6 @@ p {
   height: 304px;
   width: 260px;
   border: 1px #808080 solid;
-  display: inline-block;
   -moz-box-shadow: 0px 0px 10px #000;
   -webkit-box-shadow: 0px 0px 10px #000;
   box-shadow: 0px 0px 10px #000;
@@ -353,6 +353,18 @@ p {
   -moz-border-radius-bottomright: 4px;
   -webkit-border-bottom-right-radius: 4px;
   position: relative;
+}
+#content .wrap #content-row #left-content #dairo {
+  position: relative;
+  top: -21px;
+  left: 580px;
+  width: 170px;
+  display: block;
+  background-color: rgba(15,15,15,0.439);
+}
+#content .wrap #content-row #left-content #dairo a {
+  color: #fff;
+  padding-left: 6px;
 }
 #content .wrap #content-row #right-content {
   display: table-cell;
@@ -638,7 +650,7 @@ a {
   position: absolute;
 }
 #noticias #titulo {
-  background-color: rgba(177,201,3,0.44);
+  background-color: rgba(177,201,3,0.439);
   margin: 10px 15px 0px 30px;
   border-radius: 6px;
   -moz-border-radius-topleft: 6px;
@@ -659,7 +671,7 @@ a {
   font-size: 12px;
 }
 #noticias #contenido {
-  background-color: rgba(4,103,41,0.44);
+  background-color: rgba(4,103,41,0.439);
   margin: 0px 10px 10px 10px;
   border-radius: 6px;
   -moz-border-radius-topleft: 6px;
